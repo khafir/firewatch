@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VA.gov API Viewer</title>
+  <link href="bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-3">
+    <div class="d-flex justify-content-between mb-3">
+      <h1>VA.gov API Responses</h1>
+      <div>
+        <button id="refreshBtn" class="btn btn-primary me-2">Refresh</button>
+        <button id="clearBtn" class="btn btn-danger me-2">Clear</button>
+        <button id="exportPdfBtn" class="btn btn-success me-2">Export PDF</button>
+        <button id="exportAllPdfBtn" class="btn btn-success">Export All PDFs</button>
+      </div>
+    </div>
+    <ul class="nav nav-tabs" id="apiTabs" role="tablist"></ul>
+    <div class="tab-content" id="apiTabContent"></div>
+  </div>
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="jspdf.umd.min.js"></script>
+  <script src="jszip.min.js"></script>
+  <script src="FileSaver.min.js"></script>
+  <script src="js/functions.js"></script>
+  <script src="js/tabs/benefitsClaimsTab.js"></script>
+  <script src="js/tabs/claimTab.js"></script>
+  <script src="js/tabs/otherTabs.js"></script>
+  <script src="js/tabs/aboutTab.js"></script>
+  <script src="js/tabs/userTab.js"></script>
+  <script src="js/tabs/formsTab.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "VA.gov API Viewer",
+  "version": "1.0",
+  "description": "View VA.gov API responses in a tabbed interface",
+  "permissions": [
+    "storage",
+    "tabs",
+    "activeTab",
+    "webRequest"
+  ],
+  "host_permissions": [
+    "https://api.va.gov/*",
+    "https://www.va.gov/*",
+    "https://eauth.va.gov/*",
+    "https://www.opm.gov/*",
+    "https://www.gsa.gov/*",
+    "https://www.grants.gov/*",
+    "https://www.archives.gov/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.va.gov/my-va/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
