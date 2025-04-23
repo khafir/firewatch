@@ -3,4 +3,4 @@
 
 
 ### License
-This project is not licensed for use, modification, distribution, or monetization. See the LICENSE file for details.
+This project is not licensed for modification, distribution, or monetization. See the LICENSE file for details.
